@@ -1,9 +1,9 @@
 import openai
 from aiogram import Bot, Dispatcher, executor, types
 
-openai.api_key = "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"
+openai.api_key = """TOKEN OPENAI"""
 
-bot = Bot("5022934428:AAFd-Bq4Q3pDFPSCIC_cSxHswjy2WgdvWUQ")
+bot = Bot("""TOKEN TELEGRAM""")
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
