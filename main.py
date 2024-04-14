@@ -1,4 +1,4 @@
-import openai
+import openai, math
 from aiogram import Bot, Dispatcher, executor, types
 
 openai.api_key = """TOKEN OPENAI"""
