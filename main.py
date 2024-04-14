@@ -1,4 +1,4 @@
-import openai, math
+import openai
 from aiogram import Bot, Dispatcher, executor, types
 
 openai.api_key = """TOKEN OPENAI"""
@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
 async def start(msg: types.Message):
-    await msg.answer(f"Приветики, {msg.from_user.username}\n" +
+    await msg.answer(f"Привет, {msg.from_user.username}\n" +
                     "Введите любой вопрос, чтобы я мог ответить на него")
 
 @dp.message_handler()
